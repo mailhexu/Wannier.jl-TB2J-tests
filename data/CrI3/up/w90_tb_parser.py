@@ -1,1 +1,0 @@
-/home/hexu/projects/TB2J/TB2J/wannier/w90_tb_parser.py

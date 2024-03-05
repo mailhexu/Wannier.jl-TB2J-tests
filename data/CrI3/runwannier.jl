@@ -156,8 +156,8 @@ with `win` file.
     to be able to restart from the written binary `chk` file for other codes.
 =#
 exclude_bands = collect(1:8)
-Wannier.write_chk("up/wjl_up_projonly.chk", model_up; exclude_bands)
-Wannier.write_chk("dn/wjl_dn_projonly.chk", model_dn; exclude_bands)
+#Wannier.write_chk("up/wjl_up_projonly.chk", model_up; exclude_bands)
+#Wannier.write_chk("dn/wjl_dn_projonly.chk", model_dn; exclude_bands)
 
 #=
 ## Independent Wannierizations of two spin channels
@@ -249,6 +249,8 @@ omega(model, U_up, U_dn, λs)
 omega(model, U_up_mlwf, U_dn_mlwf, λs)
 
 # Save the gauge into `chk` files
+#
+
 Wannier.write_chk("up/wjl_up_cowf.chk", model_up, U_up; exclude_bands)
 Wannier.write_chk("dn/wjl_dn_cowf.chk", model_dn, U_dn; exclude_bands)
 
