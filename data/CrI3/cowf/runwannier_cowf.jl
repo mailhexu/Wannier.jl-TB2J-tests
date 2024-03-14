@@ -21,7 +21,7 @@ Now let's disentangle with spin overlap constraint.
 Here `λs` is the Lagrange multiplier for the constraint.
 =#
 λs = 100.0
-U_up, U_dn = disentangle(model, λs;max_iter=4000 );
+U_up, U_dn = disentangle(model, λs;max_iter=4000);
 #=
 The resulting spin-up and spin-down WFs have very similar centers and spreads,
 however, their centers drift from the original positions which were centered

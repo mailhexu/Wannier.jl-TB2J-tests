@@ -1,0 +1,67 @@
+┌ Info: Reading win file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_up.win"
+│   num_wann = 36
+│   num_bands = 60
+└   mp_grid = (6, 6, 1)
+[ Info: b-vector completeness condition satisfied
+┌ Info: Reading mmn file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_up.mmn"
+│   header = "Created on 24Apr2023 at 21:19: 1"
+│   n_kpts = 36
+│   n_bvecs = 8
+└   n_bands = 60
+┌ Info: Reading amn file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_up.amn"
+│   header = "Created on 24Apr2023 at 21:19: 0"
+│   n_kpts = 36
+│   n_bands = 60
+└   n_wann = 36
+[ Info: Lowdin orthonormalization applied to U matrices
+┌ Info: Reading eig file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_up.eig"
+│   n_kpts = 36
+└   n_bands = 60
+┌ Info: Reading win file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_dn.win"
+│   num_wann = 36
+│   num_bands = 60
+└   mp_grid = (6, 6, 1)
+[ Info: b-vector completeness condition satisfied
+┌ Info: Reading mmn file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_dn.mmn"
+│   header = "Created on 24Apr2023 at 21:28:25"
+│   n_kpts = 36
+│   n_bvecs = 8
+└   n_bands = 60
+┌ Info: Reading amn file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_dn.amn"
+│   header = "Created on 24Apr2023 at 21:28:25"
+│   n_kpts = 36
+│   n_bands = 60
+└   n_wann = 36
+[ Info: Lowdin orthonormalization applied to U matrices
+┌ Info: Reading eig file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_dn.eig"
+│   n_kpts = 36
+└   n_bands = 60
+┌ Info: Reading amn file
+│   filename = "/home/hexu/.julia/artifacts/f698136fe78b64e96c909a4ac508fd4529610eda/CrI3_updn.mud"
+│   header = "Created on 24Apr2023 at 21:39:33"
+│   n_kpts = 36
+│   n_bands = 60
+└   n_wann = 60
+ERROR: LoadError: TypeError: in keyword argument r₀, expected AbstractVector{StaticArraysCore.SVector{3}}, got a value of type Vector{StaticArraysCore.SVector{3, Float64}}
+Stacktrace:
+ [1] _omega_center(::Wannier.Model{Float64}, ::Vararg{Any}; kwargs::@Kwargs{r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64})
+   @ Wannier ~/projects/Wannier.jl/src/spread.jl:240
+ [2] omega(model::Wannier.MagModel{Float64}, Uup::Vector{Matrix{ComplexF64}}, Udn::Vector{Matrix{ComplexF64}}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64)
+   @ Wannier ~/projects/Wannier.jl/src/localization/constrain_center/coopt.jl:10
+ [3] omega
+   @ ~/projects/Wannier.jl/src/localization/constrain_center/coopt.jl:19 [inlined]
+ [4] disentangle_center(model::Wannier.MagModel{Float64}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64; f_tol::Float64, g_tol::Float64, max_iter::Int64, history_size::Int64)
+   @ Wannier ~/projects/Wannier.jl/src/localization/constrain_center/coopt.jl:147
+ [5] disentangle_center(model::Wannier.MagModel{Float64}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64)
+   @ Wannier ~/projects/Wannier.jl/src/localization/constrain_center/coopt.jl:106
+ [6] top-level scope
+   @ ~/projects/Wannier.jl-TB2J-tests/data/CrI3/cowf_constrain_center/cooptimization.jl:42
+in expression starting at /home/hexu/projects/Wannier.jl-TB2J-tests/data/CrI3/cowf_constrain_center/cooptimization.jl:42

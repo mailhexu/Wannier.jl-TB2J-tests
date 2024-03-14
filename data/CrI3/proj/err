@@ -1,0 +1,73 @@
+┌ Info: Reading win file
+│   filename = "up/cri3_up.win"
+│   num_wann = 36
+│   num_bands = 60
+└   mp_grid = (6, 6, 1)
+┌ Info: Reading win file
+│   filename = "up/cri3_up.win"
+│   num_wann = 36
+│   num_bands = 60
+└   mp_grid = (6, 6, 1)
+[ Info: b-vector completeness condition satisfied
+┌ Info: Reading mmn file
+│   filename = "up/cri3_up.mmn"
+│   header = "Created on 24Apr2023 at 21:19: 1"
+│   n_kpts = 36
+│   n_bvecs = 8
+└   n_bands = 60
+┌ Info: Reading amn file
+│   filename = "up/cri3_up.amn"
+│   header = "Created on 24Apr2023 at 21:19: 0"
+│   n_kpts = 36
+│   n_bands = 60
+└   n_wann = 36
+[ Info: Lowdin orthonormalization applied to U matrices
+┌ Info: Reading eig file
+│   filename = "up/cri3_up.eig"
+│   n_kpts = 36
+└   n_bands = 60
+┌ Info: Reading win file
+│   filename = "dn/cri3_dn.win"
+│   num_wann = 36
+│   num_bands = 60
+└   mp_grid = (6, 6, 1)
+[ Info: b-vector completeness condition satisfied
+┌ Info: Reading mmn file
+│   filename = "dn/cri3_dn.mmn"
+│   header = "Created on 24Apr2023 at 21:28:25"
+│   n_kpts = 36
+│   n_bvecs = 8
+└   n_bands = 60
+┌ Info: Reading amn file
+│   filename = "dn/cri3_dn.amn"
+│   header = "Created on 24Apr2023 at 21:28:25"
+│   n_kpts = 36
+│   n_bands = 60
+└   n_wann = 36
+[ Info: Lowdin orthonormalization applied to U matrices
+┌ Info: Reading eig file
+│   filename = "dn/cri3_dn.eig"
+│   n_kpts = 36
+└   n_bands = 60
+┌ Info: Writing wsvec.dat file
+│   filename = "up/cri3_up_wsvec.dat"
+│   header = "# Created by WannierIO.jl 2024-03-14T20:01:48.062"
+│   mdrs = false
+│   n_wann = 36
+└   n_Rvecs = 51
+┌ Info: Writing tb.dat file
+│   filename = "up/cri3_up_tb.dat"
+│   header = "# Created by WannierIO.jl 2024-03-14T20:01:48.725"
+│   n_wann = 36
+└   n_Rvecs = 51
+┌ Info: Writing wsvec.dat file
+│   filename = "dn/cri3_dn_wsvec.dat"
+│   header = "# Created by WannierIO.jl 2024-03-14T20:01:49.500"
+│   mdrs = false
+│   n_wann = 36
+└   n_Rvecs = 51
+┌ Info: Writing tb.dat file
+│   filename = "dn/cri3_dn_tb.dat"
+│   header = "# Created by WannierIO.jl 2024-03-14T20:01:49.555"
+│   n_wann = 36
+└   n_Rvecs = 51

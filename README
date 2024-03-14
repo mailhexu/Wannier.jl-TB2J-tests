@@ -1,0 +1,5 @@
+1. git clone the source file of wannier.jl 
+2. git chekcout coopt
+3. Install the julia package. 
+4. Run the julia script in each directory to the the Wannier Hamiltonian files. 
+5. Run TB2J to get the J vales. 
