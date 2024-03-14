@@ -50,18 +50,16 @@
 │   n_kpts = 36
 │   n_bands = 60
 └   n_wann = 60
-ERROR: LoadError: TypeError: in keyword argument r₀, expected AbstractVector{StaticArraysCore.SVector{3}}, got a value of type Vector{StaticArraysCore.SVector{3, Float64}}
+ERROR: LoadError: UndefVarError: `omega_center` not defined
 Stacktrace:
- [1] _omega_center(::Wannier.Model{Float64}, ::Vararg{Any}; kwargs::@Kwargs{r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64})
-   @ Wannier ~/projects/Wannier.jl/src/spread.jl:240
- [2] omega(model::Wannier.MagModel{Float64}, Uup::Vector{Matrix{ComplexF64}}, Udn::Vector{Matrix{ComplexF64}}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64)
+ [1] omega(model::Wannier.MagModel{Float64}, Uup::Vector{Matrix{ComplexF64}}, Udn::Vector{Matrix{ComplexF64}}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64)
    @ Wannier ~/projects/Wannier.jl/src/localization/constrain_center/coopt.jl:10
- [3] omega
+ [2] omega
    @ ~/projects/Wannier.jl/src/localization/constrain_center/coopt.jl:19 [inlined]
- [4] disentangle_center(model::Wannier.MagModel{Float64}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64; f_tol::Float64, g_tol::Float64, max_iter::Int64, history_size::Int64)
+ [3] disentangle_center(model::Wannier.MagModel{Float64}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64; f_tol::Float64, g_tol::Float64, max_iter::Int64, history_size::Int64)
    @ Wannier ~/projects/Wannier.jl/src/localization/constrain_center/coopt.jl:147
- [5] disentangle_center(model::Wannier.MagModel{Float64}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64)
+ [4] disentangle_center(model::Wannier.MagModel{Float64}, r₀::Vector{StaticArraysCore.SVector{3, Float64}}, λc::Float64, λs::Float64)
    @ Wannier ~/projects/Wannier.jl/src/localization/constrain_center/coopt.jl:106
- [6] top-level scope
+ [5] top-level scope
    @ ~/projects/Wannier.jl-TB2J-tests/data/CrI3/cowf_constrain_center/cooptimization.jl:42
 in expression starting at /home/hexu/projects/Wannier.jl-TB2J-tests/data/CrI3/cowf_constrain_center/cooptimization.jl:42
